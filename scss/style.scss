@@ -66,7 +66,9 @@ body {
 .dropdown-menu {
   --bs-dropdown-zindex: 9999 !important;
   background-color: $quaternary-shade !important;;
-  border-radius: 0 !important;
+  border-radius-top-left: 0 !important;
+  border-radius-top-right:  0 !important;
+  border: none;
 }
 
 /* rpi hide Form labels for exposed form Elements */
@@ -436,10 +438,14 @@ body {
       transition: opacity 500ms;
       opacity: 1;
       max-height: 2.7rem;
+      height: 2.7rem;
       &:first-of-type {
         border-bottom-left-radius: var(--bs-border-radius);
         border-top-left-radius: var(--bs-border-radius);
         margin-left: auto;
+      }
+      &:not(:first-of-type) {
+        border-left:none;
       }
       &:last-of-type {
         border-bottom-right-radius: var(--bs-border-radius);

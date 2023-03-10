@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 // colors
-$primary-shade: #000000;
+$primary-shade: #6b7580;
 $primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
 $accent-shade: #d6001c;
@@ -16,7 +16,7 @@ $green: #28a745;
 $cyan: #17a2b8;
 $white: #fff;
 $gray-100: #f8f9fa;
-$gray-800: #333333;
+$gray-800: #111111;
 
 $theme-colors: (primary: $primary-shade, secondary: $accent-shade, tertiary: $tertiary-shade, quaternary:$quaternary-shade, success:$green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
 $brand-primary: $accent-shade;
@@ -55,6 +55,7 @@ $input-btn-padding-y: 0.75rem !default;
   --bs-btn-hover-bg: #{darken($primary-shade, 10%)};
   --bs-secondary-rgb: #{$brand-primary};
   --bs-link-color: #{$link-color};
+  --bs-btn-bg: #{$primary-shade};
 
   .btn-secondary {
     --bs-btn-bg: transparent;
