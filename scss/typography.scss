@@ -5,12 +5,16 @@
 //@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic");
 //@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900");
 //
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
 // Font, line-height, and color for body text, headings, and more.
 $font-family-sans-serif:  'Source Sans Pro', sans-serif;
 $font-family-monospace:   SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-serif: Georgia, serif !default;
+$font-family-sans-serif-alternate: 'Oswald', sans-serif;
 $font-family-base: $font-family-sans-serif;
+
+
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-size-lg: $font-size-base * 1.25;
 $font-size-sm: $font-size-base * .875;
@@ -20,17 +24,16 @@ $font-weight-bold: bold;
 $font-weight-medium: 600;
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.5;
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 2.25;
-$h3-font-size: $font-size-base * 2.0;
-$h4-font-size: $font-size-base * 1.75;
-$h5-font-size: $font-size-base * 1.5;
-$h6-font-size: $font-size-base * 1.25;
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.75;
+$h3-font-size: $font-size-base * 2.5;
+$h4-font-size: $font-size-base * 2;
+$h5-font-size: $font-size-base * 1.75;
+$h6-font-size: $font-size-base * 1.5;
 // Override for rpi
-$headings-font-family:  $font-family-serif !default;
-
+$headings-font-family:  $font-family-sans-serif-alternate !default;
 $btn-font-weight: $font-weight-medium !default;
-
+$btn-font-family: $font-family-sans-serif;
 $navbar-brand-font-size: $font-size-base * 2.5;
 $navbar-brand-font-size-md: $font-size-base * 2.0;
 $navbar-brand-font-size-mobile: $font-size-base * 1.5;
@@ -56,7 +59,6 @@ dt {
 }
 
 .view-header {
-  font-family: $font-family-serif;
   font-size: $font-size-base * 1.5;
 }
 .view-content {
