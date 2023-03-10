@@ -49,7 +49,7 @@ $btn-white-space: nowrap;
 
   // Buttons
 $border-radius: .275rem !default;
-$input-btn-padding-y: 0.75rem !default;
+$input-btn-padding-y: 0.5rem !default;
 
 :root {
   --bs-btn-hover-bg: #{darken($primary-shade, 10%)};
