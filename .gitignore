@@ -47,3 +47,9 @@
 /robots.txt
 /update.php
 /web.config
+js/.DS_Store
+
+#Ignore Node Modules
+node_modules
+package-lock.json
+templates/.DS_Store
