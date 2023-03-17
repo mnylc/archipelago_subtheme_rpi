@@ -752,6 +752,9 @@ body {
 
     /* special class added via the UI for the advanced search */
     #page {
+      .form-control {
+        border: 1px solid rgba(88,118,121,0.2);
+      }
       .advanced-search-box {
         .views-exposed-form {
           .form-row {
