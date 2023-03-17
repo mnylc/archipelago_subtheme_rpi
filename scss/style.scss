@@ -657,9 +657,9 @@ body {
 
       /* The Mobile Navbar toggler */
       .navbar-toggler {
-        border-color: var(--bs-primary);
+        border:none;
         .navbar-toggler-icon {
-          background-color: var(--bs-primary);
+          background-color: var(--bs-btn-bg);
           background-image: none;
           -webkit-mask-image: var(--bs-navbar-toggler-icon-bg);
           mask-image: var(--bs-navbar-toggler-icon-bg);
