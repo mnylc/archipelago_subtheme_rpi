@@ -22,7 +22,68 @@ body {
 .site-footer {
   background: $tertiary-shade !important;
   padding-top: 1rem;
+  padding-bottom: 0;
   min-height: 20rem;
+  a {
+    color: $gray-100;
+    text-decoration: none;
+    &:hover {
+      color: $gray-100;
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-footer__bottom {
+  background: $gray-400 !important;
+  color: $gray-100;
+  .block {
+    margin: 0 0;
+  }
+ .content {
+    padding: 0 0;
+    margin-top: 0;
+  }
+  .bottom-bit {
+    margin: 3%;
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+  .footer-nav {
+    min-height:40px;
+    >a {
+      padding-left: 1rem !important;
+      border-left: 1px solid #9ea2a2;
+      margin-left: 1rem;
+    }
+  }
+  .footer-nav-policies {
+    width: auto;
+    a {
+      margin: 0 0.5rem;
+      width: auto;
+    }
+  }
+
+  .rpi-seal {
+    background: $gray-600 !important;
+    img {
+      float: left;
+      margin-right: 8%;
+      margin-top: 5%;
+      margin-bottom: 1rem;
+    }
+    address {
+      float: left;
+      width: 66%;
+      margin-top: 7.5%;
+      text-align: left;
+    }
+  }
+}
+.site-footer__top {
+  min-height: 300px;
 }
 
 .menu--main li:not(.dropdown-item) > a {
@@ -304,6 +365,8 @@ body {
     min-height: 8rem;
     padding-top: calc(var(--bs-gutter-y) * 0.5);
     padding-bottom: calc(var(--bs-gutter-y) * 0.5);
+    box-shadow: 0px 1px 5px rgba(88,118,121,0.2);
+    border-bottom: 1px solid rgba(88,118,121,0.2);
   }
   /* IA Bookreader */
   #page .BookReader .BookReaderSearchHilite, #page .BRmobileMenu #page .BookReaderSearchHilite, #page .BRfloat .BookReaderSearchHilite {
@@ -601,7 +664,7 @@ body {
           mask-image: var(--bs-navbar-toggler-icon-bg);
         }
       }
-      padding-bottom: map-get($spacers, 4);
+      padding-bottom: 0;
       .view-content {
         margin-bottom: map-get($spacers, 4);
         &.row > div:not(:last-child) {
@@ -792,6 +855,23 @@ body {
   button {
     margin-bottom: 0.875rem;
   }
+}
+
+/* Extras */
+.back-to-top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  z-index: 1234;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding-top: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
