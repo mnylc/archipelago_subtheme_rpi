@@ -1,6 +1,6 @@
 <footer class="site-footer">
   {% block footer %}
-    <div class="{{ container }}">
+    <div class="{{ container }} gx-0">
       <div class="site-footer__top clearfix">
       {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
           {{ page.footer_first }}
@@ -11,9 +11,8 @@
       </div>
     </div>
     <div class="site-footer__bottom">
-    <div class="{{ container }}">
+    <div class="{{ container }} gx-0">
       {% if page.footer_fifth %}
-
           {{ page.footer_fifth }}
       {% endif %}
     </div>
