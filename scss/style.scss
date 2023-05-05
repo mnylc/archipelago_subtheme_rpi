@@ -391,6 +391,7 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     .nav-link {
+      --bs-navbar-nav-link-padding-x: 1rem;
       color: $navbar-dark-bg-active-color;
       &:active {
         color: $navbar-dark-hover-color;
