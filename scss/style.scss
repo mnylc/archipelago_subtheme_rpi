@@ -519,6 +519,21 @@ body {
 
   /* Rest of the pages Page exception */
   .archipelago-rpi-theme {
+
+    .breadcrumb {
+      .breadcrumb-item + .breadcrumb-item::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+      }
+      --bs-breadcrumb-divider: "\f101";
+      --bs-breadcrumb-divider-color: rgba(88, 118, 121, 0.2);
+    }
     #navbar-top {
       padding: 0 0.5rem;
       min-height: 67px;
@@ -760,6 +775,7 @@ body {
 
     div.dropdown {
       margin: 0 0 1rem 0;
+      width: fit-content;
     }
 
     --bs-nav-pills-link-active-bg: var(--bs-primary);
