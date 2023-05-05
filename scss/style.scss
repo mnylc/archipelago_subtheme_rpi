@@ -416,6 +416,7 @@ body {
     background-position-x: 130%;
     .not-to-be-collapsed {
       min-height: 8rem;
+      height: max-content;
     }
   }
   /* IA Bookreader */
