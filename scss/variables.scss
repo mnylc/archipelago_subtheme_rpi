@@ -33,7 +33,7 @@ $inverse-color: $white;
 //
 // Style anchor elements.
 $link-color: #207a9e;
-$link-decoration: underline;
+$link-decoration: none;
 $link-hover-color: $accent-dark;
 $link-hover-decoration: underline;
 // Comments
@@ -59,6 +59,9 @@ $input-btn-padding-y: 0.5rem !default;
   --bs-secondary-rgb: #{$brand-primary};
   --bs-link-color: #{$link-color};
   --bs-btn-bg: #{$primary-shade};
+  .navbar-toggler {
+    --bs-navbar-toggler-border-color: transparent !important;
+  }
 
   .btn-secondary {
     --bs-btn-bg: transparent;
@@ -90,8 +93,8 @@ $input-btn-padding-y: 0.5rem !default;
 }
 
 /* header nav overrides */
-$navbar-dark-bg-active-color: $quaternary-shade !default;
-$navbar-dark-hover-color: $primary-shade !default;
+$navbar-dark-bg-active-color: $primary-shade !default;
+$navbar-dark-hover-color: $link-color !default;
 $navbar-padding-y: 0;
 
 
