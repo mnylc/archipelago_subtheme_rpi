@@ -968,6 +968,57 @@ body {
         }
       }
     }
+  /* Custom carrousel behavior */
+  div.front-page-carousel-right  {
+
+    .carousel-indicators {
+      position: absolute;
+      height: auto;
+      right: 2rem;
+      top: initial;
+      left:initial;
+      bottom: initial;
+      z-index: 2;
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+      justify-content: right;
+      padding: 0;
+      // Use the .carousel-control's width as margin so we don't overlay those
+      margin-right: $carousel-control-width;
+      margin-bottom: 0.5rem;
+      margin-left: $carousel-control-width;
+      list-style: none;
+
+      [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: $carousel-indicator-width;
+        height: $carousel-indicator-height;
+        padding: 0;
+        margin-right: $carousel-indicator-spacer;
+        margin-left: $carousel-indicator-spacer;
+        cursor: pointer;
+        background-color: $carousel-indicator-active-bg;
+        background-clip: padding-box;
+        border: 0;
+        text-indent: initial;
+        // Use transparent borders to increase the hit area by 10px on top and bottom.
+        border-top: $carousel-indicator-hit-area-height solid transparent;
+        border-bottom: $carousel-indicator-hit-area-height solid transparent;
+        opacity: $carousel-indicator-opacity;
+        font-size: 1.5rem;
+        @include transition($carousel-indicator-transition);
+      }
+
+      .active {
+        font-size: 2rem;
+        width: 100%;
+        opacity: $carousel-indicator-active-opacity;
+      }
+    }
+  }
+
   }
 }
 
