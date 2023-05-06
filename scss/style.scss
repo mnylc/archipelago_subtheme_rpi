@@ -977,37 +977,44 @@ body {
         display:none;
       }
       .carousel-item {
-        max-height: 20rem;
-        min-height: 20rem;
+        height: 22rem;
         .figure {
           display: block;
           .figure-caption {
+            font-weight: 300;
+            max-width: 25%;
             color: white;
             background-color: $accent-shade;
             position: absolute;
-            bottom: 1rem;
+            bottom: 0.5rem;
             left: 1rem;
-            padding: 0.5rem;
+            padding: 0.25rem;
           }
         }
         .carousel-caption {
+          clip-path: polygon(0 16%, 0 48%, 0 70%, 0 100%, 0 0);
           left: 0;
           top: 2rem;
           height: fit-content;
           width: 40%;
           background-color: white;
-          transition: height 0.5s;
-          padding: 1rem;
+          transition: clip-path 0.5s;
+          padding: 0;
+          pointer-events: none;
         }
         &.active {
           .carousel-caption {
+            clip-path: polygon(97% 5%, 99% 53%, 94% 95%, 0 100%, 0 0);
             p {
+              &:empty {
+                visibility: hidden;
+              }
               color: black;
               display: -webkit-box;
-              -webkit-line-clamp: 5;
+              -webkit-line-clamp: 4;
               -webkit-box-orient: vertical;
               overflow:hidden;
-              margin: 0;
+              margin: 1rem 1rem 1rem 0;
             }
           }
         }
@@ -1018,14 +1025,14 @@ body {
         height: auto;
         right: 0;
         top: initial;
-        left:initial;
+        left: initial;
         bottom: initial;
         z-index: 2;
         display: flex;
         flex-flow: column;
         align-items: flex-end;
         justify-content: right;
-        padding: 0;
+        padding: inherit;
         // Use the .carousel-control's width as margin so we don't overlay those
         margin-right: 0;
         margin-bottom: 0.5rem;
@@ -1037,7 +1044,7 @@ body {
           width: $carousel-indicator-width;
           height: $carousel-indicator-height;
           padding: 0 0 0 0.5rem;
-          margin-right: $carousel-indicator-spacer;
+          margin-right: 0;
           margin-left: $carousel-indicator-spacer;
           cursor: pointer;
           background-clip: padding-box;
@@ -1048,7 +1055,7 @@ body {
           border-top: $carousel-indicator-hit-area-height solid transparent;
           border-bottom: $carousel-indicator-hit-area-height solid transparent;
           opacity: $carousel-indicator-opacity;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           @include transition($carousel-indicator-transition);
         }
 
@@ -1056,6 +1063,101 @@ body {
           background-color: $carousel-indicator-active-bg;
           color: white;
           margin-right: 2rem;
+          opacity: $carousel-indicator-active-opacity;
+        }
+      }
+    }
+    div.front-page-carousel-left  {
+      .carousel-caption > h3 {
+        display:none;
+      }
+      .carousel-item {
+        height: 22rem;
+        .figure {
+          display: block;
+          .figure-caption {
+            font-weight: 300;
+            max-width: 25%;
+            color: white;
+            background-color: $accent-shade;
+            position: absolute;
+            bottom: 0.5rem;
+            right: 1rem;
+            padding: 0.25rem;
+          }
+        }
+        .carousel-caption {
+          clip-path: polygon(100% 42%, 100% 79%, 100% 98%, 100% 19%, 100% 0);
+          right: 0;
+          left: auto;
+          top: 2rem;
+          height: fit-content;
+          width: 40%;
+          background-color: white;
+          transition: clip-path 0.5s;
+          padding: 0;
+          pointer-events: none;
+        }
+        &.active {
+          .carousel-caption {
+            clip-path: polygon(100% 100%, 3% 97%, 0 23%, 2% 2%, 100% 0);
+            p {
+              &:empty {
+                visibility: hidden;
+              }
+              color: black;
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+              overflow:hidden;
+              margin: 1rem 0rem 1rem 1rem;
+            }
+          }
+        }
+      }
+      .carousel-indicators {
+        font-family: $font-family-sans-serif-alternate;
+        position: absolute;
+        height: auto;
+        left: 0;
+        top: initial;
+        bottom: initial;
+        z-index: 2;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: left;
+        padding: inherit;
+        // Use the .carousel-control's width as margin so we don't overlay those
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+        margin-right: calc(#{$carousel-control-width} * 7);
+        list-style: none;
+        [data-bs-target] {
+          box-sizing: content-box;
+          flex: 0 1 auto;
+          width: $carousel-indicator-width;
+          height: $carousel-indicator-height;
+          padding: 0 0 0 0.5rem;
+          margin-right: $carousel-indicator-spacer;
+          margin-left: 0;
+          cursor: pointer;
+          background-clip: padding-box;
+          border: 0;
+          text-indent: initial;
+          background-color: $quaternary-shade;
+          // Use transparent borders to increase the hit area by 10px on top and bottom.
+          border-top: $carousel-indicator-hit-area-height solid transparent;
+          border-bottom: $carousel-indicator-hit-area-height solid transparent;
+          opacity: $carousel-indicator-opacity;
+          font-size: 1.2rem;
+          @include transition($carousel-indicator-transition);
+        }
+
+        .active {
+          background-color: $carousel-indicator-active-bg;
+          color: white;
+          margin-left: 2rem;
           opacity: $carousel-indicator-active-opacity;
         }
       }

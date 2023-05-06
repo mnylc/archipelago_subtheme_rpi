@@ -58,8 +58,8 @@ $input-btn-padding-y: 0.5rem !default;
 $carousel-indicator-width: 80%;
 $carousel-indicator-height: 80%;
 $carousel-indicator-active-bg: $accent-shade;
-$carousel-indicator-hit-area-height: 1rem;
-$carousel-indicator-opacity: 1;
+$carousel-indicator-hit-area-height: 0.5rem;
+$carousel-indicator-opacity: 0.75;
 $carousel-control-width: 5%;
 $carousel-indicator-transition: opacity 0.5s, margin-right 0.5s;
 
