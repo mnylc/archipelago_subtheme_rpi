@@ -215,9 +215,13 @@
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
       <div class="featured-bottom layout-main-wrapper pb-3 mb-2 clearfix">
         <aside class="{{ container }} clearfix" role="complementary">
+          <div class="row justify-content-center">
+            <div class="{{ content_top_classes|join(" ") }}">
           {{ page.featured_bottom_first }}
           {{ page.featured_bottom_second }}
           {{ page.featured_bottom_third }}
+            </div>
+          </div>
         </aside>
       </div>
     {% endif %}

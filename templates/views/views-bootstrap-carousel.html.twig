@@ -29,7 +29,7 @@
   {%  if indicators %}
   <div class="carousel-indicators">
       {% for key, row in rows %}
-          {% set indicator_classes = [loop.first ? 'active', 'text-black', 'bg-quaternary'] %}
+          {% set indicator_classes = [loop.first ? 'active'] %}
           <button aria-label="{{ row.title }}" type="button" class="{{ indicator_classes|join(' ') }}" data-bs-target="#{{ id }}" data-bs-slide-to="{{ key }}">
              {{ row.title }}
           </button>
@@ -48,7 +48,7 @@
             <div class="carousel-caption d-none d-md-block">
             {% endif %}
             {% if row.title %}
-                <h3 class="text-black p-3 bg-quaternary text-bg-quaternary">{{ row.title }}</h3>
+                <h3 class="p-3 bg-quaternary text-bg-quaternary">{{ row.title }}</h3>
             {% endif %}
             {% if row.description %}
                 <p>{{ row.description }}</p>

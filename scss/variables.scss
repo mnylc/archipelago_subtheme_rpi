@@ -6,7 +6,7 @@ $primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
 $accent-shade: #d6001c;
 $accent-light: lighten($accent-shade, 37%);
-$accent-dark: #207A9E;
+$accent-dark: rgb(110,103,127);
 $tertiary-shade: #00205b;
 $quaternary-shade: #d7dbde;
 // Reassign color vars to semantic color scheme
@@ -57,11 +57,11 @@ $input-btn-padding-y: 0.5rem !default;
 /* Carousel */
 $carousel-indicator-width: 80%;
 $carousel-indicator-height: 80%;
-$carousel-indicator-active-bg: $accent-dark;
+$carousel-indicator-active-bg: $accent-shade;
 $carousel-indicator-hit-area-height: 1rem;
 $carousel-indicator-opacity: 1;
 $carousel-control-width: 5%;
-$carousel-indicator-transition: opacity 0.5s, width 0.5s;
+$carousel-indicator-transition: opacity 0.5s, margin-right 0.5s;
 
 :root {
   --bs-btn-hover-bg: #{darken($primary-shade, 10%)};
