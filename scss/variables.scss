@@ -71,6 +71,9 @@ $carousel-indicator-transitiaccon: opacity 0.5s, margin-right 0.5s;
   .navbar-toggler {
     --bs-navbar-toggler-border-color: transparent !important;
   }
+  .breadcrumb {
+    --bs-breadcrumb-margin-bottom: 0;
+  }
 
   .btn-secondary {
     --bs-btn-bg: transparent;
