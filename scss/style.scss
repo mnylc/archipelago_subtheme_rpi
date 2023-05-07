@@ -1222,7 +1222,7 @@ a.highlighted_pumpkin {
   div.highlighted_pumpkin_outer_wrapper {
     transition: background-color .6s ease-out;
     div.highlighted_pumpkin_description {
-      &.col-12 {
+      &.col-12, &.col-7 {
         position: relative;
         height: 10rem;
         padding: 1rem 1rem;
