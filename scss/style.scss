@@ -697,6 +697,11 @@ body {
           }
         }
       }
+      .featured-bottom {
+        background-image: url("../images/rpi-pattern-2-cut.png");
+        background-repeat: repeat-x;
+        background-position-y: center;
+      }
 
       .BookReader {
         /* Allows Highlights in first page to show */
