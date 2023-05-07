@@ -553,6 +553,7 @@ body {
       margin-bottom: 2.5rem;
       min-height: 0;
       display: flex;
+      align-items: center;
       .form-item-sort-bef-combine {
         @extend .btn-sm;
       }

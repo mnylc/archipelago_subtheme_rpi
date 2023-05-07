@@ -216,11 +216,13 @@
       <div class="featured-bottom layout-main-wrapper pb-3 mb-2 clearfix">
         <aside class="{{ container }} clearfix" role="complementary">
           <div class="row justify-content-center">
-            <div class="{{ content_top_classes|join(" ") }}">
           {{ page.featured_bottom_first }}
+            <div class="col-sm-12 col-lg-6">
           {{ page.featured_bottom_second }}
-          {{ page.featured_bottom_third }}
             </div>
+              <div class="col-sm-12 col-lg-6">
+          {{ page.featured_bottom_third }}
+              </div>
           </div>
         </aside>
       </div>
