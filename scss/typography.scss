@@ -43,7 +43,12 @@ $nav-link-font-weight: $font-weight-light;
 .navbar-brand {
   font-family: $font-family-serif;
 }
-
+#navbar-main {
+  /* To follow RPI's guidelines */
+  h1,h2,h3,h4,h5 {
+    font-family: $font-family-sans-serif;
+  }
+}
 dt {
   font-family: $font-family-serif;
   font-style: italic;

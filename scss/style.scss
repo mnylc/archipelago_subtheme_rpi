@@ -679,9 +679,41 @@ body {
       height: 100%;
       display: flex;
       flex-direction: column;
-
+      .navbar-brand {
+        display:flex;
+        a {
+          align-self: center;
+        }
+      }
       #header .views-exposed-form label {
         display: none;
+      }
+      .form-control, .form-select {
+        border: 1px solid rgba(88,118,121,0.2);
+      }
+      .advanced-search-box {
+        .views-exposed-form {
+          .form-row {
+            min-height: 0;
+            width: 100%;
+            flex-flow: column;
+            fieldset {
+              min-height: 0;
+              flex-direction: column !important;
+            }
+            .fieldset-wrapper {
+              display: flex;
+              column-gap: 1rem;
+              label {
+                @extend .visually-hidden;
+              }
+              .js-form-item {
+                display: flex;
+                flex-grow: 1;
+              }
+            }
+          }
+        }
       }
 
       .advanced-search-box {
@@ -709,6 +741,49 @@ body {
         /* Allows Highlights in first page to show */
         overflow:visible;
       }
+
+      #pageHeaderForm {
+        .views-exposed-form {
+          &:not(:focus-within) {
+            input[name="search_api_fulltext"] {
+              width: 100%;
+              padding-left: 2rem;
+              border-left: none;
+              border-right:none;
+              border-top:none;
+            }
+            .form-item-search-api-fulltext {
+              &:before {
+                width: 2.5rem;
+                height: 2.5rem;
+                content: "\F52A";
+                /* TODO ask Allison if we need an icon */
+                font-family: bootstrap-icons !important;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                padding: $input-padding-y $input-padding-x;
+                pointer-events: none;
+              }
+            }
+            .form-actions {
+              display: none;
+            }
+          }
+        }
+
+
+        input[name="search_api_fulltext"] {
+          transition: width 0.2s ease-out;
+          width: 100%;
+        }
+      }
+
+
+
+
+
+
 
       /* TODO make it only for advanced-search-box */
       .views-exposed-form {
@@ -877,35 +952,6 @@ body {
     }
 
     /* special class added via the UI for the advanced search */
-    #page {
-      .form-control, .form-select {
-        border: 1px solid rgba(88,118,121,0.2);
-      }
-      .advanced-search-box {
-        .views-exposed-form {
-          .form-row {
-            min-height: 0;
-            width: 100%;
-            flex-flow: column;
-            fieldset {
-              min-height: 0;
-              flex-direction: column !important;
-            }
-            .fieldset-wrapper {
-              display: flex;
-              column-gap: 1rem;
-              label {
-                @extend .visually-hidden;
-              }
-              .js-form-item {
-                display: flex;
-                flex-grow: 1;
-              }
-            }
-          }
-        }
-      }
-    }
 
     /* Exposed form overrides based on bef */
     .views-exposed-form.bef-exposed-form {
