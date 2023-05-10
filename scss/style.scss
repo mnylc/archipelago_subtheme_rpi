@@ -919,7 +919,7 @@ body {
       --bs-dropdown-link-color: var(--bs-secondary);
       --bs-dropdown-bg: #{$inverse-color};
       --bs-dropdown-link-hover-color: #{$inverse-color};
-      --bs-dropdown-link-active-color: #{$link-hover-color};
+      --bs-dropdown-link-active-color: #{$inverse-color};
       --bs-dropdown-link-active-bg: var(--bs-primary);
       --bs-dropdown-link-hover-bg: #{$link-color};
       /* exact offset for 15degree separator */
