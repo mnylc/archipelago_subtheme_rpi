@@ -1328,6 +1328,11 @@ a.highlighted_pumpkin {
           -webkit-line-clamp: 5;
           -webkit-box-orient: vertical;
         }
+        &.col-7 {
+          p {
+            -webkit-line-clamp: 10;
+          }
+        }
       }
       background-color: $accent-shade !important;
       div.highlighted_pumpkin_image_wrapper {
