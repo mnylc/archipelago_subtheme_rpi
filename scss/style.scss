@@ -106,6 +106,12 @@ body {
       max-width: max-content;
     }
   }
+  .nav-item.dropdown:hover {
+    .dropdown-menu:not(.show) {
+      display: none;
+    }
+  }
+
   .site-footer__bottom {
     .rpi-seal {
       flex-flow: column;
@@ -274,6 +280,13 @@ body {
   input[name="search_api_fulltext"] {
     max-width: 10rem;
   }
+  .nav-item.menu-item--expanded.dropdown {
+    z-index: 9999;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
 
 
   #navbar-main {
@@ -281,6 +294,8 @@ body {
       /* Avoid Flex Jumpin' around */
       height: 3.75rem;
       border-top: 1px solid rgba(88, 118, 121, 0.2);
+      /* Avoid flex having extra space and messing the white bar on large sizes */
+      flex-basis: 100%;
 
       .nav-item {
         position: relative;
@@ -338,14 +353,6 @@ body {
     div:only-of-type {
       flex-basis: 100%;
     }
-  }
-
-  .nav-item.menu-item--expanded.dropdown {
-    z-index: 9999;
-  }
-
-  .navbar-nav .dropdown-menu {
-    position: absolute;
   }
 
   .js-form-type-search-api-autocomplete, .form-item-search-api-fulltext {
@@ -772,18 +779,11 @@ body {
           }
         }
 
-
         input[name="search_api_fulltext"] {
           transition: width 0.2s ease-out;
           width: 100%;
         }
       }
-
-
-
-
-
-
 
       /* TODO make it only for advanced-search-box */
       .views-exposed-form {
@@ -929,7 +929,7 @@ body {
       .dropdown-item  {
         padding: 0;
         display:flex;
-        transition: background-color 0.5s ease-in;
+        transition: background-color 0.2s linear;
         &:hover {
           color: var(--bs-dropdown-link-hover-color);
           text-decoration: $link-hover-decoration;
