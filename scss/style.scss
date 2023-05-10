@@ -930,6 +930,11 @@ body {
         padding: 0;
         display:flex;
         transition: background-color 0.2s linear;
+        &.active {
+          a.active {
+            color: var(--bs-dropdown-link-hover-color);
+          }
+        }
         &:hover {
           color: var(--bs-dropdown-link-hover-color);
           text-decoration: $link-hover-decoration;
