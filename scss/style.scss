@@ -417,6 +417,11 @@ body {
 }
 
 :root {
+  div.block-archipelago-subtheme-rpi-content {
+    .field {
+      padding-bottom: 1rem;
+    }
+  }
   #navbar-main {
     min-height: 8rem;
     padding-top: calc(var(--bs-gutter-y) * 0.5);
