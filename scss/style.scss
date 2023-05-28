@@ -441,6 +441,13 @@ body {
     filter: alpha(opacity=30);
     background-color: $link-color;
   }
+  /* Damn IAbookreader, long titles kill the layout! */
+  #page .BookReader {
+    .BRtoolbarSection.BRtoolbarSectionTitle {
+      white-space: initial;
+    }
+  }
+
   #views-bootstrap-collections-using-solr-search-browse-collections.grid {
     div.row {
       div.d-flex {
