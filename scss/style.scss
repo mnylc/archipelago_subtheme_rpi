@@ -299,15 +299,6 @@ body {
 
       .nav-item {
         position: relative;
-
-        &:not(:first-of-type):before {
-          position: absolute;
-          content: "";
-          height: 3.75rem;
-          top: -0.5rem;
-          border: 1px solid rgba(88, 118, 121, 0.2);
-          transform: rotateZ(-15deg);
-        }
       }
     }
   }
@@ -412,6 +403,15 @@ body {
       &:hover {
         color: $navbar-dark-hover-color;
       }
+    }
+  }
+}
+
+/* Navlinks for LoD/icons */
+.nav-item {
+  a.nav-link {
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -559,7 +559,7 @@ body {
     }
     #navbar-top {
       padding: 0 0.5rem;
-      min-height: 67px;
+      min-height: 55px;
     }
 
     .highlighted {
@@ -793,12 +793,6 @@ body {
           }
         }
       }
-      .featured-bottom {
-        background-image: url("../images/rpi-pattern-2-cut.png");
-        background-repeat: repeat-x;
-        background-position-y: top;
-      }
-
       .BookReader {
         /* Allows Highlights in first page to show */
         overflow:visible;
@@ -810,9 +804,6 @@ body {
             input[name="search_api_fulltext"] {
               width: 100%;
               padding-left: 2rem;
-              border-left: none;
-              border-right:none;
-              border-top:none;
             }
             .form-item-search-api-fulltext {
               &:before {
@@ -894,8 +885,8 @@ body {
 
   .archipelago-rpi-theme {
     .region-top-header {
-      padding-top: calc(var(--bs-gutter-x) * 0.250);
-      padding-bottom: calc(var(--bs-gutter-x) * 0.250);
+      padding-top: 0; //calc(var(--bs-gutter-x) * 0.250);
+      padding-bottom: 0; //calc(var(--bs-gutter-x) * 0.250);
     }
     .navbar-dark {
       --bs-navbar-brand-color: #{$quaternary-shade};
@@ -1385,9 +1376,9 @@ a.highlighted_pumpkin {
           }
         }
       }
-      background-color: $accent-shade !important;
+      background-color: #207a9e !important;
       div.highlighted_pumpkin_image_wrapper {
-        background-color: $accent-shade !important;
+        background-color: #207a9e !important;
         img {
           transform: rotate3d(1, 5, 3, -6deg) scale(1.1);
         }

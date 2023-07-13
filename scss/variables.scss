@@ -4,13 +4,14 @@
 $primary-shade: #6b7580;
 $primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
-$accent-shade: #d6001c;
+$accent-shade: #363436;
 $accent-light: lighten($accent-shade, 37%);
 $accent-dark: rgb(110, 103, 127);
 $tertiary-shade: #00205b;
-$quaternary-shade: #d7dbde;
+/* $quaternary-shade: #d7dbde; */
+$quaternary-shade: #aec24f;
 // Reassign color vars to semantic color scheme
-$red: #dc3545;
+$red: #ab2328;
 $yellow: #ffc107;
 $green: #28a745;
 $cyan: #17a2b8;
@@ -32,9 +33,9 @@ $inverse-color: $white;
 // Links
 //
 // Style anchor elements.
-$link-color: #207a9e;
+$link-color: $accent-shade;
 $link-decoration: none;
-$link-hover-color: $accent-dark;
+$link-hover-color: $accent-shade;
 $link-hover-decoration: underline;
 // Comments
 $comment-spacer-x: 1.25em;
@@ -68,6 +69,10 @@ $carousel-indicator-transitiaccon: opacity 0.5s, margin-right 0.5s;
   --bs-secondary-rgb: #{$brand-primary};
   --bs-link-color: #{$link-color};
   --bs-btn-bg: #{$primary-shade};
+  .nav-pills {
+    --bs-nav-pills-link-active-color: #{$quaternary-shade};
+    --bs-nav-pills-link-active-bg: none;
+  }
   .navbar-toggler {
     --bs-navbar-toggler-border-color: transparent !important;
   }

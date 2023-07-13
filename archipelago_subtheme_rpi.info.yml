@@ -5,7 +5,7 @@ description: 'SASS starter kit for a Bootstrap Barrio SubTheme.'
 core: 8.x
 core_version_requirement: ^8 || ^9 || ^10
 base theme: bootstrap_barrio
-logo: 'images/rpi-logo-white.png'
+logo: 'images/rpi-logo-white-smaller.png'
 
 libraries:
   - archipelago_subtheme_rpi/global-styling
