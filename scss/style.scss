@@ -347,7 +347,7 @@ body {
   }
 
   .js-form-type-search-api-autocomplete, .form-item-search-api-fulltext {
-    flex-grow: 1 !important;
+    // flex-grow: 1 !important;
   }
   .flex-nowrap {
     display:flex;
@@ -820,7 +820,16 @@ body {
               }
             }
             .form-actions {
-              display: none;
+                display: none;
+              &:focus-visible {
+                display:revert;
+              }
+              &:focus {
+                display:revert;
+              }
+              &:hover {
+                display:revert;
+              }
             }
           }
         }
