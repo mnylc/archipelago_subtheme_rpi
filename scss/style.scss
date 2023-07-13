@@ -531,7 +531,6 @@ body {
       .accordion-button {
         span {
           @extend h2;
-          color: #{$inverse-color};
         }
       }
     }
