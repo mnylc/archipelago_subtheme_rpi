@@ -531,6 +531,7 @@ body {
       .accordion-button {
         span {
           @extend h2;
+          color: #{$inverse-color};
         }
       }
     }
@@ -932,15 +933,6 @@ body {
     }
 
     .accordion {
-
-      /*  --bs-dropdown-link-color: var(--bs-secondary);
-      --bs-dropdown-bg: #{$inverse-color};
-      --bs-dropdown-link-hover-color: #{$inverse-color};
-      --bs-dropdown-link-active-color: #{$inverse-color};
-      --bs-dropdown-link-active-bg: var(--bs-primary);
-      --bs-dropdown-link-hover-bg: #{$link-color}; */
-
-
       --bs-accordion-active-bg: var(--bs-primary);
       --bs-accordion-color: #{$inverse-color};
       /* See https://yoksel.github.io/url-encoder/ so good */
