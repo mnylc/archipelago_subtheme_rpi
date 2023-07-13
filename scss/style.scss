@@ -965,6 +965,8 @@ body {
         span {
           color: #{$inverse-color};
           text-decoration: none;
+          text-shadow:none;
+          border: 1px solid transparent;
         }
       }
     }
