@@ -63,6 +63,12 @@ dt {
   margin-top: -0.5rem !important;
 }
 
+a {
+  &:hover {
+    text-decoration-color: #{$quaternary-shade}
+  }
+}
+
 h1,h2,h3,h4,h5 {
   &.fas > a {
     font-family: $headings-font-family;

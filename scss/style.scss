@@ -19,7 +19,6 @@ body {
   background: $primary-shade !important;
 }
 
-
 .site-footer {
   display: flex;
   flex-flow: column;
@@ -402,6 +401,7 @@ body {
       }
       &:hover {
         color: $navbar-dark-hover-color;
+        text-decoration: none;
       }
     }
   }
