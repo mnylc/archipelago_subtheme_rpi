@@ -960,11 +960,11 @@ body {
           align-content: flex-start;
           justify-content: flex-start;
         }
-        .accordion-button:not(.collapsed) {
-          span {
-            color: #{$inverse-color};
-            text-decoration: none;
-          }
+      }
+      .accordion-button:not(.collapsed) {
+        span {
+          color: #{$inverse-color};
+          text-decoration: none;
         }
       }
     }
