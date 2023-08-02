@@ -543,6 +543,18 @@ body {
   /* Rest of the pages Page exception */
   .archipelago-rpi-theme {
 
+    /* About/article pages and links */
+    &.path-node {
+      article.node {
+        a {
+          text-decoration: underline;
+          font-weight: 800;
+        }
+      }
+    }
+
+
+
     .breadcrumb {
       .breadcrumb-item + .breadcrumb-item::before {
         font-family: "Font Awesome 5 Free";
@@ -892,6 +904,7 @@ body {
     }
   }
 
+  /* Headers and Dropdowns */
   .archipelago-rpi-theme {
     .region-top-header {
       padding-top: 0; //calc(var(--bs-gutter-x) * 0.250);

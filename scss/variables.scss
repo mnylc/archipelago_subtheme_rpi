@@ -62,7 +62,7 @@ $carousel-indicator-active-bg: $accent-shade;
 $carousel-indicator-hit-area-height: 0.5rem;
 $carousel-indicator-opacity: 1;
 $carousel-control-width: 5%;
-$carousel-indicator-transitiaccon: opacity 0.5s, margin-right 0.5s;
+$carousel-indicator-transition: opacity 0.5s, margin-right 0.5s;
 
 :root {
   --bs-btn-hover-bg: #{darken($primary-shade, 10%)};
@@ -113,5 +113,11 @@ $carousel-indicator-transitiaccon: opacity 0.5s, margin-right 0.5s;
 $navbar-dark-bg-active-color: $primary-shade !default;
 $navbar-dark-hover-color: $link-color !default;
 $navbar-padding-y: 0;
+
+/* Bootstrap Barrio's SCSS 5.02 base theme introduced a bug, let's try to override to make gulp happy
+@see https://www.drupal.org/project/bootstrap_sass/issues/3365211
+@todo remove once the above issue is solved
+ */
+$table-border-width : 1px;
 
 
