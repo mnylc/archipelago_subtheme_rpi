@@ -6,6 +6,7 @@ core: 8.x
 core_version_requirement: ^8 || ^9 || ^10
 base theme: bootstrap_barrio
 logo: 'images/rpi-logo-white-smaller.png'
+ico: 'favicon.png'
 
 libraries:
   - archipelago_subtheme_rpi/global-styling
